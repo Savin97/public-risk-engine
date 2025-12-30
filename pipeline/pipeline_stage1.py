@@ -37,4 +37,3 @@ def add_stage_1_features(df):
     raise NotImplementedError(
         "Feature engineering details are omitted in the public repository."
     )
-    return df
