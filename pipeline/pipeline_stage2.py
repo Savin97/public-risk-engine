@@ -28,5 +28,3 @@ def stage2(df):
     raise NotImplementedError(
         "Stage 2 implementation is omitted in the public version of this project."
     )
-
-    return earnings_df
