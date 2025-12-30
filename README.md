@@ -21,7 +21,13 @@ Built by me — end-to-end:
 Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
 # 
-
+# Overview
+<img width="2560" height="1440" alt="overview" src="https://github.com/user-attachments/assets/30271d11-8380-4854-af9c-7976eca67324" />
+# Risk Alerts
+<img width="2560" height="1440" alt="Risk alerts" src="https://github.com/user-attachments/assets/71aadc2a-d46e-4f9a-b58c-2eee78c57a92" />
+# Stock Drill Down
+<img width="2560" height="1440" alt="Stock_Drill_Down" src="https://github.com/user-attachments/assets/58c19046-135d-4ac7-8b19-7abf4daa231a" />
+#
 # Problem the Product Solves
 
 Earnings events often produce the largest and fastest price moves a stock will make all quarter — but the reactions are noisy and hard to contextualize.
