@@ -22,6 +22,7 @@ Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
 # 
 # Dashboard Examples
+Below are screenshots from the working Streamlit dashboard that sits on top of the analytics engine:
 ## Overview
 
 <img width="2557" height="1225" alt="overview" src="https://github.com/user-attachments/assets/12baf5a4-1f2b-45f0-8c30-0ae49dee3615" />
