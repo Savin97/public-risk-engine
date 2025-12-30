@@ -1,20 +1,26 @@
 # Public Risk Engine
+## TL;DR — What This Project Is
 
-This is the public / open-core version of a proprietary earnings-risk engine.
-The full product transforms historical earnings, price reactions, volatility regimes, and sector behaviour into **actionable, risk-aware insights around quarterly earnings events**.
+A proprietary earnings-risk analytics engine (this is the public / open-core version).
+It analyzes how stocks behave around earnings → quantifies risk, stability & anomalies → produces alerts & recommendations.
 
-To protect the commercial IP, the following are intentionally omitted from this repo:
-- Feature engineering logic
-- Risk scoring methodology
-- Recommendation & alert mapping
-- API integrations & data pipelines
+Built by me — end-to-end:
 
-This repository exists to demonstrate:
-- software & data engineering architecture
-- pipeline design
-- analysis approach & domain knowledge
-- coding style & structure
-without exposing the core proprietary logic.
+- Designed the architecture & pipeline
+
+- Built the data ingestion & cleaning layers
+
+- Engineered earnings-behaviour & risk features
+
+- Created risk scoring & alert logic (private)
+
+- Output structured dashboard data for investors
+
+-  Built a UI for visualization and user experience
+
+Sensitive logic & data integrations are intentionally omitted.
+This repo shows structure, design & engineering approach.
+# 
 
 # Problem the Product Solves
 
@@ -38,8 +44,25 @@ The platform helps answer those questions through structured risk-aware analytic
   - muted reaction to earnings surprise
   - implied vs. actual reaction divergence
   - peer-level risk clusters
-  - Outputs an investor-friendly dashboard for scanning risk across names and sectors.
+  - outputs an investor-friendly dashboard for scanning risk across names and sectors.
 This repo shows the architecture & pipeline design, while omitting the proprietary model logic.
+
+# ⚠️ Disclaimer 
+This is the public / open-core version of a proprietary earnings-risk engine.
+To protect the commercial IP, the following are intentionally omitted from this repo:
+- Feature engineering logic
+- Risk scoring methodology
+- Recommendation & alert mapping
+- API integrations & data pipelines
+
+The full product transforms historical earnings, price reactions, volatility regimes, and sector behaviour into **actionable, risk-aware insights around quarterly earnings events**.
+
+This repository exists to demonstrate:
+- software & data engineering architecture
+- pipeline design
+- analysis approach & domain knowledge
+- coding style & structure
+without exposing the core proprietary logic.
 
 # Architecture Overview
 Raw Data
@@ -126,3 +149,5 @@ If you’d like to discuss:
 - startup opportunities
 
 feel free to reach out.
+
+### e-mail: savin992@gmail.com
