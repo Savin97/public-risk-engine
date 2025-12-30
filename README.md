@@ -1,6 +1,8 @@
 # Earnings Risk Engine — Public Version
+
 ## TL;DR — What This Project Is
-Built by: Michael Savin — end-to-end design, engineering & UX.
+**Earnings Risk Engine** — a proprietary earnings-risk analytics engine  
+Built end-to-end by **Michael Savin** — architecture, engineering & UX.
 
 A proprietary earnings-risk analytics engine (this is the public / open-core version).
 It analyzes how stocks behave around earnings → quantifies risk, stability & anomalies → produces alerts & recommendations.
@@ -73,23 +75,6 @@ These screenshots are taken directly from the working dashboard built on top of 
 
 #
 
-# ⚠️ Disclaimer 
-This is the public / open-core version of a proprietary earnings-risk engine.
-To protect the commercial IP, the following are intentionally omitted from this repo:
-- Feature engineering logic
-- Risk scoring methodology
-- Recommendation & alert mapping
-- API integrations & data pipelines
-
-The full product transforms historical earnings, price reactions, volatility regimes, and sector behaviour into **actionable, risk-aware insights around quarterly earnings events**.
-
-This repository exists to demonstrate:
-- software & data engineering architecture
-- pipeline design
-- analysis approach & domain knowledge
-- coding style & structure
-without exposing the core proprietary logic.
-
 # Architecture Overview
 Raw Data
 
@@ -153,6 +138,23 @@ Future private-system work includes:
 - Regime-aware volatility modelling
 - Live data ingestion
 - Postgres + cloud storage backend
+
+# ⚠️ Disclaimer 
+This is the public / open-core version of a proprietary earnings-risk engine.
+To protect the commercial IP, the following are intentionally omitted from this repo:
+- Feature engineering logic
+- Risk scoring methodology
+- Recommendation & alert mapping
+- API integrations & data pipelines
+
+The full product transforms historical earnings, price reactions, volatility regimes, and sector behaviour into **actionable, risk-aware insights around quarterly earnings events**.
+
+This repository exists to demonstrate:
+- software & data engineering architecture
+- pipeline design
+- analysis approach & domain knowledge
+- coding style & structure
+without exposing the core proprietary logic.
 
 ## Why this repo does not contain full code
 To protect the commercial IP:
