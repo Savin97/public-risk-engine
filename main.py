@@ -1,5 +1,5 @@
 # main.py
-from pipeline import run_pipeline
+from pipeline.pipeline import run_pipeline
 
 def main():
     print("Running Pipeline...")
