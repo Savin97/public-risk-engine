@@ -1,10 +1,10 @@
 # Imports from other modules
-from data_utilities.feature_engineering import (
-  )
+# from data_utilities.feature_engineering import (
+#   )
 
-from data_utilities.data_processing import handle_NA_values
-from risk_scoring.scoring import per_stock_risk_score
-from config import STEP3_OUTPUT_FILE_PATH
+# from data_utilities.data_processing import handle_NA_values
+# from risk_scoring.scoring import per_stock_risk_score
+# from config import STEP3_OUTPUT_FILE_PATH
 
 def stage3(earnings_df):
     """
