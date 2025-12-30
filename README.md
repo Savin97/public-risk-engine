@@ -5,7 +5,7 @@ Built by: Michael Savin — end-to-end design, engineering & UX.
 A proprietary earnings-risk analytics engine (this is the public / open-core version).
 It analyzes how stocks behave around earnings → quantifies risk, stability & anomalies → produces alerts & recommendations.
 
-Built by me — end-to-end:
+I designed and built:
 
 - Designed the architecture & pipeline
 
@@ -57,7 +57,7 @@ The platform helps answer those questions through structured risk-aware analytic
 This repo shows the architecture & pipeline design, while omitting the proprietary model logic.
 
 # Dashboard Examples
-Below are screenshots from the working Streamlit dashboard that sits on top of the analytics engine:
+These screenshots are taken directly from the working dashboard built on top of the analytics engine:
 
 ## Overview - Portfolio-level risk scanning & event filtering
 
@@ -176,3 +176,5 @@ If you’d like to discuss:
 feel free to reach out.
 
 ### e-mail: savin992@gmail.com
+
+All rights reserved.
