@@ -1,38 +1,32 @@
 # Imports from other modules
 from data_utilities.feature_engineering import (
-    add_reaction_3d_10d,
-    add_surprise_bucket,
-    add_is_up_down_nochange,
-    add_rolling_frequencies,
-    add_stdev,
-    add_beta_market_cap_buckets,
-    add_sector_mean,
-    add_relative_to_sector
   )
-from data_utilities.data_processing import keep_earnings_dates_only
+from data_utilities.data_processing import ()
 from config import STEP2_OUTPUT_FILE_PATH
 
 def stage2(df):
-    """ 2. Data Processing"""
-    # Keep only rows of earnings report dates
-    earnings_df = keep_earnings_dates_only(df)
-    # Sort earnings chronologically per stock
-    earnings_df = earnings_df.sort_values(["stock", "earnings_date"])
-    """ 2.1 Earnings Pattern Analysis """
-    earnings_df = add_reaction_3d_10d(earnings_df)
-    earnings_df = add_surprise_bucket(earnings_df)
-    earnings_df = add_is_up_down_nochange(earnings_df)
-    earnings_df = add_rolling_frequencies(earnings_df)
-    earnings_df = add_stdev(earnings_df)
+    """
+    Stage 2 – Data Processing & Feature Construction
 
-    """ 2.2 Risk & Volatility Assessment """
-    earnings_df = add_beta_market_cap_buckets(earnings_df)
+    In the private version this stage:
+      - Filters to earnings-report rows per stock
+      - Sorts earnings chronologically
+      - Builds earnings pattern features such as:
+          * 3-day / 10-day price reaction around earnings
+          * Surprise buckets
+          * Up / down / no-change labels
+          * Rolling frequencies of different reaction types
+      - Builds risk & volatility features:
+          * Beta and market-cap buckets
+      - Builds peer / competitor context:
+          * Sector / industry means
+          * Performance relative to sector
 
-    """ 2.3 Peer/Competitor Movements """
-    earnings_df = add_sector_mean(earnings_df)
-    earnings_df = add_relative_to_sector(earnings_df)
-
-    """ Stage 2 Complete - Output CSV """
-    earnings_df.to_csv(STEP2_OUTPUT_FILE_PATH, index = False)
+    The full implementation is omitted in the public repository
+    to protect proprietary feature engineering logic.
+    """
+    raise NotImplementedError(
+        "Stage 2 implementation is omitted in the public version of this project."
+    )
 
     return earnings_df
