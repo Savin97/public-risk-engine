@@ -1,18 +1,5 @@
 # Imports from other modules
 from data_utilities.feature_engineering import (
-    add_consistent_3d_10d,
-    add_past_consistency_3d_10d,
-    add_confidence_score,
-    add_neg_reaction_to_pos_surprise_10d,
-    add_flag_volatility_3d_10d,
-    add_sector_beta_features,
-    add_relative_3d_10d,
-    add_flag_diff_3d_10d,
-    add_direction_mismatch,
-    add_sector_mean_3d_same_day,
-    add_sector_peer_risk_flag,
-    add_risk_score,
-    add_past_vol_10d
   )
 
 from data_utilities.data_processing import handle_NA_values
@@ -20,54 +7,32 @@ from risk_scoring.scoring import per_stock_risk_score
 from config import STEP3_OUTPUT_FILE_PATH
 
 def stage3(earnings_df):
-    """ 3. Risk Assessment Methodology """
-    """ 3A. Earnings-Based Risk Factors """
-    """ Earnings Reaction Consistency Score """
-    # Potential fix needed - min period = 8 Causes lots of empties in past_consistency!
+    """
+    Stage 3 – Risk Assessment Methodology
 
-    # Adds consistent_3d, consistent_10d columns: Stock direction - Actual vs Expected
-    earnings_df = add_consistent_3d_10d(earnings_df)
-    # How often a stock reacts in the same direction
-    earnings_df = add_past_consistency_3d_10d(earnings_df)
-    # Adds a confidence score - Range: 0-1
-    earnings_df = add_confidence_score(earnings_df)
+    In the private version this stage, some of the features are:
+    - Earnings-Based Risk Factors
+        - Computes "consistency" features:
+            * Whether 3-day / 10-day reactions align with expected direction
+            * Past consistency of reactions across multiple quarters
+            * A confidence score (0–1) based on history depth & stability
 
-    """ Earnings Trend & Risk Indicator """
-    earnings_df = add_neg_reaction_to_pos_surprise_10d(earnings_df)
+    - Volatility & Market Risk Factors
+        - Measures historical 10-day volatility around earnings
+        - Flags unusually high / low volatility regimes (3d / 10d)
+        - Adds beta-based features and sector/systemic risk metrics
+        
 
-    """ 3B. Volatility & Market Risk Factors """
-    """ Historical Earnings Volatility Range """
-    earnings_df = add_past_vol_10d(earnings_df)
-    earnings_df = add_flag_volatility_3d_10d(earnings_df)
-    """ Beta & Systemic Risk """
-    earnings_df = add_sector_beta_features(earnings_df)
-    """ Fetch and merge index betas. TODO: FIX to cache results, ADD server error handling. 
-    TODO: PROBABBLY CHANGE to Sector betas.Takes a lot of time """
-    # earnings_df = merge_index_beta_with_df(earnings_df)
+      - Risk Scoring System
+        - Cleans / imputes NA values in the engineered features
+        - Computes a per-earnings-report risk score based on the above
+          factors (earnings pattern, volatility, peer divergence, etc.)
+        - Optionally aggregates into a per-stock risk score over the
+          last N quarters using proprietary weighting.
 
-    """ Identify stocks that behave differently from peers post-earnings """
-    earnings_df = add_relative_3d_10d(earnings_df)
-    earnings_df = add_flag_diff_3d_10d(earnings_df)
-    earnings_df = add_direction_mismatch(earnings_df)
-
-    """ Sector & Peer Performance Risk """
-    earnings_df = add_sector_mean_3d_same_day(earnings_df)
-    # Flag Sector & Peer Performance Risk cases
-    earnings_df = add_sector_peer_risk_flag(earnings_df)
-    
-    """ IN TESTING - Earnings Call Sentiment Analysis """
-    # processed_nlp = nlp()
-
-    """ 3C. Risk Scoring System """
-    earnings_df = handle_NA_values(earnings_df)
-
-    """ Risk scoring per earning report """
-    earnings_df = add_risk_score(earnings_df)
-
-    """ TODO: NOT IMPLEMENTED YET. Risk score for each stock based on last 8 quarters """
-    per_stock_score_df = per_stock_risk_score(earnings_df)
-
-    """ Step 3 Complete CSV """
-    earnings_df.to_csv(STEP3_OUTPUT_FILE_PATH, index = False)
-
-    return earnings_df
+    The full implementation is omitted in the public repository to
+    protect proprietary risk factor engineering and scoring logic.
+    """
+    raise NotImplementedError(
+        "Stage 3 implementation is omitted in the public version of this project."
+    )
