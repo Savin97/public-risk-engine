@@ -21,6 +21,7 @@ Built by me — end-to-end:
 Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
 # 
+# Dashboard Examples
 ## Overview
 
 <img width="2557" height="1225" alt="overview" src="https://github.com/user-attachments/assets/12baf5a4-1f2b-45f0-8c30-0ae49dee3615" />
@@ -89,37 +90,28 @@ Stage 4 – Recommendations, Alerts & Dashboard Output
 
 
 # Key Modules (High-Level Only)
-pipeline/
+- pipeline/
 End-to-end orchestration of the analytics workflow.
 
-pipeline_stage1
+- pipeline_stage1
 Loads & prepares cleaned, earnings-aligned data.
 
-pipeline_stage2
+- pipeline_stage2
 Builds behaviour- and risk-related features (omitted here).
 
-pipeline_stage3
+- pipeline_stage3
 Per-earnings & per-stock risk assessment (logic omitted).
 
-pipeline_stage4
+- pipeline_stage4
 Generates alerts, recommendations & dashboard outputs (logic omitted).
-
-# Dashboard Examples
-
-(Screenshots removed here — but in your real repo, add 2–3 visuals with watermarks or blurred tickers.)
-
-Suggested:
-Summary heatmap
-Per-stock history panel
-Alert feed
 
 # Tech Stack
 
-Python
-Pandas / NumPy
-Streamlit (dashboard layer)
-Standard financial data APIs
-CSV storage
+- Python
+- Pandas / NumPy
+- Streamlit (dashboard layer)
+- Financial data APIs
+- CSV storage
 
 # Data Sources (Described Generically)
 
