@@ -1,8 +1,8 @@
 # Imports from other modules
-from data_utilities.feature_engineering import (
-  )
-from data_utilities.data_processing import ()
-from config import STEP2_OUTPUT_FILE_PATH
+# from data_utilities.feature_engineering import (
+#   )
+# from data_utilities.data_processing import ()
+# from config import STEP2_OUTPUT_FILE_PATH
 
 def stage2(df):
     """
