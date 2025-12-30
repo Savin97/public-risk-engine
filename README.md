@@ -21,12 +21,18 @@ Built by me — end-to-end:
 Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
 # 
-# Overview
-<img width="2560" height="1440" alt="overview" src="https://github.com/user-attachments/assets/30271d11-8380-4854-af9c-7976eca67324" />
-# Risk Alerts
-<img width="2560" height="1440" alt="Risk alerts" src="https://github.com/user-attachments/assets/71aadc2a-d46e-4f9a-b58c-2eee78c57a92" />
-# Stock Drill Down
-<img width="2560" height="1440" alt="Stock_Drill_Down" src="https://github.com/user-attachments/assets/58c19046-135d-4ac7-8b19-7abf4daa231a" />
+## Overview
+
+<img width="2557" height="1225" alt="overview" src="https://github.com/user-attachments/assets/12baf5a4-1f2b-45f0-8c30-0ae49dee3615" />
+
+## Risk Alerts
+
+<img width="2516" height="805" alt="Risk alerts" src="https://github.com/user-attachments/assets/6d6bbd8a-ee75-453e-96e3-23e38c9b874f" />
+
+## Stock Drill Down
+
+<img width="2502" height="1289" alt="Stock_Drill_Down" src="https://github.com/user-attachments/assets/9cde9bb5-e579-4d5d-ab39-728b4b4067f4" />
+
 #
 # Problem the Product Solves
 
