@@ -1,4 +1,4 @@
-# Public Risk Engine
+# Earnings Risk Engine — Public Version
 ## TL;DR — What This Project Is
 Built by: Michael Savin — end-to-end design, engineering & UX.
 
