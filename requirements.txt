@@ -1,13 +1,1 @@
-pandas>=2.0
-numpy>=1.26
-streamlit>=1.39
-yfinance
-requests
-python-dateutil
-seaborn
-matplotlib
-scikit-learn
-statsmodels
-xgboost
-python-dotenv
-nltk
+
