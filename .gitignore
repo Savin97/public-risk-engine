@@ -1,6 +1,22 @@
-.env
-*.csv
-*.xlsx
-*.db
+# Virtual env
+.venv/
+
+# Python cache
 __pycache__/
-cache/
+*.pyc
+
+# Data / outputs
+data/
+**/data/
+*.csv
+outputs/
+**/outputs/
+
+# Secrets / local config
+.env
+*.env
+config.py
+
+# OS / notebooks
+.DS_Store
+.ipynb_checkpoints/
