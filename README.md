@@ -1,5 +1,6 @@
 # Public Risk Engine
 ## TL;DR — What This Project Is
+Built by: Michael Savin — end-to-end design, engineering & UX.
 
 A proprietary earnings-risk analytics engine (this is the public / open-core version).
 It analyzes how stocks behave around earnings → quantifies risk, stability & anomalies → produces alerts & recommendations.
@@ -16,7 +17,7 @@ Built by me — end-to-end:
 
 - Output structured dashboard data for investors
 
--  Built a UI for visualization and user experience
+- Built a UI for visualization and user experience
 
 Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
@@ -52,7 +53,7 @@ The platform helps answer those questions through structured risk-aware analytic
   - muted reaction to earnings surprise
   - implied vs. actual reaction divergence
   - peer-level risk clusters
-  - outputs an investor-friendly dashboard for scanning risk across names and sectors.
+- Outputs an investor-friendly dashboard for scanning risk across names and sectors.
 This repo shows the architecture & pipeline design, while omitting the proprietary model logic.
 
 # Dashboard Examples
