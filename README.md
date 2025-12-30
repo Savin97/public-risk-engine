@@ -20,22 +20,16 @@ Built by me — end-to-end:
 
 Sensitive logic & data integrations are intentionally omitted.
 This repo shows structure, design & engineering approach.
+
 # 
-# Dashboard Examples
-Below are screenshots from the working Streamlit dashboard that sits on top of the analytics engine:
-## Overview
+# Dashboard Overview
+Here’s the main dashboard that sits on top of the analytics engine:
 
 <img width="2557" height="1225" alt="overview" src="https://github.com/user-attachments/assets/12baf5a4-1f2b-45f0-8c30-0ae49dee3615" />
 
-## Risk Alerts
+The dashboard is **built in Streamlit**.
+# 
 
-<img width="2516" height="805" alt="Risk alerts" src="https://github.com/user-attachments/assets/6d6bbd8a-ee75-453e-96e3-23e38c9b874f" />
-
-## Stock Drill Down
-
-<img width="2502" height="1289" alt="Stock_Drill_Down" src="https://github.com/user-attachments/assets/9cde9bb5-e579-4d5d-ab39-728b4b4067f4" />
-
-#
 # Problem the Product Solves
 
 Earnings events often produce the largest and fastest price moves a stock will make all quarter — but the reactions are noisy and hard to contextualize.
@@ -61,6 +55,23 @@ The platform helps answer those questions through structured risk-aware analytic
   - outputs an investor-friendly dashboard for scanning risk across names and sectors.
 This repo shows the architecture & pipeline design, while omitting the proprietary model logic.
 
+# Dashboard Examples
+Below are screenshots from the working Streamlit dashboard that sits on top of the analytics engine:
+
+## Overview - Portfolio-level risk scanning & event filtering
+
+<img width="2557" height="1225" alt="overview" src="https://github.com/user-attachments/assets/12baf5a4-1f2b-45f0-8c30-0ae49dee3615" />
+ 
+## Risk Alerts - Automatically flagged anomalies & risk conditions
+
+<img width="2516" height="805" alt="Risk alerts" src="https://github.com/user-attachments/assets/6d6bbd8a-ee75-453e-96e3-23e38c9b874f" />
+
+## Stock Drill-Down - Historical earnings-risk profile for a single stock
+
+<img width="2502" height="1289" alt="Stock_Drill_Down" src="https://github.com/user-attachments/assets/9cde9bb5-e579-4d5d-ab39-728b4b4067f4" />
+
+#
+
 # ⚠️ Disclaimer 
 This is the public / open-core version of a proprietary earnings-risk engine.
 To protect the commercial IP, the following are intentionally omitted from this repo:
@@ -80,13 +91,21 @@ without exposing the core proprietary logic.
 
 # Architecture Overview
 Raw Data
-   ↓
+
+    ↓
+    
 Stage 1 – Load & Format
-   ↓
+
+    ↓
+    
 Stage 2 – Earnings Behaviour & Risk Features
-   ↓
+
+    ↓
+    
 Stage 3 – Risk Assessment & Scoring
-   ↓
+
+    ↓
+    
 Stage 4 – Recommendations, Alerts & Dashboard Output
 
 
